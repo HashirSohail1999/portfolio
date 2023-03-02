@@ -1,33 +1,277 @@
-.App {
-  text-align: center;
+:root {
+  --skyeblue:#14cff0;
+  --roughblue:#2d82b5;
+  --deepblue:#011124;
+  --orange:#ff7b00;
+  --seagreen:#018786;
+  --deep-seagreen:#05404b;
+  --matter-black:#121212;
+  --grey:#ffffffcc;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media only screen and (min-width: 1440px) {
+  html{
+    font-size: 8px;
+  }
+  /* 
+This is the styling for the form
+*/
+.form{
+  margin:10.0rem ;
+  min-width: 100rem;
+  min-height: 75rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
+  .menu{
+    display:flex;
+    flex-direction: row;
+  }
+  .menu-mob,.bars{
+    display: none;
+  }
+  .header{
+    display: flex;
+    min-width: 40rem;
+    min-height: 6rem;
+    background-color: var(--matter-black);
+    align-items: center;
+    justify-content: right;
+  }
+  .link{
+    display:block;
+    color:var(--grey);
+    text-decoration: none;
+    font-size: 3rem;
+    margin:.8rem 5rem;
+  }
+  .link:hover{
+    color:#14cff0;
+    border-bottom: .3rem solid var(--orange);
+    transform: scaleY(1.1,1.1);
+  }
+  
+  /*  */
+  /* This is the CSS for the PILL  */
+  /*  */
+  
+  .pill{
+    position: absolute;
+    left:1.0rem;
+    padding:.5rem;
+    margin:.5rem;
+    display: inline-block;
+    background-image:linear-gradient(-90deg,var(--seagreen),10% ,var(--deep-seagreen));
+    border-radius: 2.5rem;
+  }  
+  
   .App-logo {
+    height: 4.5rem;
+    width:4.5rem;
+    float:left;
+    pointer-events: none;
     animation: App-logo-spin infinite 20s linear;
   }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .Site-name{
+    color:#fff;
+    display: inline-block;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    content:center;
+    font-size:3rem;
+    font-weight: bold;
+    margin:0.2rem 1.2rem .5rem 0;
+  }
+  .dot{
+    display: inline-block;
+    margin:0;
+    color: var(--orange);
+  }
+  
+  /*  */
+  /* This is the CSS for the Home page */
+  /*  */
+  
+  .home{
+    display: flex;
+    flex-direction: row;
+    padding:10rem;
+    background-image:linear-gradient( var(--deepblue),var(--deep-seagreen));
+    min-height: 80.9vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .Potrait{
+    display:block;
+    height: 60.0rem;
+    width:60.0rem;
+    margin:10rem;
+    border: .5rem solid transparent;
+    background: linear-gradient( var(--orange),var(--skyeblue)  ) border-box;
+    border-radius: 30.0rem;
+  }
+  .SkillsImage{
+    margin:5rem 10rem;
+    display:block;
+    height: 60.0rem;
+    width:60.0rem;
+    border: .5rem solid transparent;
+    background: linear-gradient( var(--orange),var(--skyeblue) ) border-box;
+    border-radius: 30.0rem;
 }
+  .Socials{
+    margin-top: -35rem;
+    margin-left: 5rem;
+    flex-direction: column;
+  }
+  
+  /*  */
+  /* This is the styling for the Project.js */
+  /* */
+  
+  .Projects{
+    display: inline-flex;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y:auto;
+    overflow-x: hidden;
+    max-width: 109rem;
+    max-height: 79rem;
+    padding:2.5rem;
+    border: 1px solid none;
+  }
+  
+  .Project{
+    height: 22.0rem;
+    width: 39.0rem;;
+    border-radius: 2.5rem;
+    margin:2.5rem 2.5rem 0rem 2.5rem;
+    transition:.25s ease-in-out;
+  }
+  
+  .ProjectTitle{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display:inline;
+    font-size:2.6rem;
+    font-weight: bold;
+    font-family:'Segoe UI';
+    color:#fff;
+    transition:.25s ease-in-out;
+  }
+  
+  .tohitthettile:Hover>.ProjectTitle{
+    color:#05404b;
+    }
+  .ProjectBox{
+    display:inline-block;
+    border-radius: 2.5rem;
+    margin:4.5rem 4.6rem 4.5rem 0rem ;
+    height: 28.0rem;
+    width: 44.0rem;
+    transition:.55s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+  }
+  .ProjectBox:Hover{
+    transform: scale(1.05);
+    background-color: #fff ;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* 
+This is the styling for contactjs
+*/
+
+.Contact {
+  display:flex;
+  flex-direction: row;
+  background-image:linear-gradient( var(--deepblue),var(--deep-seagreen));
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height:100vh ;
+}
+.ContactInfo{
+
+    display:flex;
+    flex-direction: column;
+    font-size:2.4rem;
+    font-weight: bold;
+    margin:3.0rem;
+    padding-bottom: 15rem;
+    color: var(--skyeblue);
+    border:1px solid raed;
+  
+}
+}
+@media only screen and (max-width: 1440px) {
+  html{
+    font-size: 6px;
+}
+/* 
+This is the styling for the form
+*/
+.form{
+  margin:10.0rem ;
+  min-width: 100rem;
+  min-height: 75rem;
+}
+.menu{
+  display:flex;
+  flex-direction: row;
+}
+.menu-mob,.bars{
+  display: none;
+}
+.header{
+  display: flex;
+  min-width: 40rem;
+  min-height: 6rem;
+  background-color: var(--matter-black);
+  align-items: center;
+  justify-content: right;
+}
+.link{
+  display:block;
+  color:var(--grey);
+  text-decoration: none;
+  font-size: 3rem;
+  margin:.8rem 5rem;
+}
+.link:hover{
+  color:#14cff0;
+  border-bottom: .3rem solid var(--orange);
+  transform: scaleY(1.1,1.1);
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*  */
+/* This is the CSS for the PILL  */
+/*  */
 
+.pill{
+  position: absolute;
+  left:1.0rem;
+  padding:.5rem;
+  margin:.5rem;
+  display: inline-block;
+  background-image:linear-gradient(-90deg,var(--seagreen),10% ,var(--deep-seagreen));
+  border-radius: 2.5rem;
+}  
+
+.App-logo {
+  height: 4.5rem;
+  width:4.5rem;
+  float:left;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +279,636 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Site-name{
+  color:#fff;
+  display: inline-block;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  content:center;
+  font-size:3rem;
+  font-weight: bold;
+  margin:0.2rem 1.2rem .5rem 0;
+}
+.dot{
+  display: inline-block;
+  margin:0;
+  color: var(--orange);
+}
+
+/*  */
+/* This is the CSS for the Home page */
+/*  */
+
+.home{
+  display: flex;
+  flex-direction: row;
+  padding:10rem;
+  background-image:linear-gradient( var(--deepblue),var(--deep-seagreen));
+  min-height: 80.9vh;
+  justify-content: center;
+  align-items: center;
+}
+.Potrait{
+  display:block;
+  height: 60.0rem;
+  width:60.0rem;
+  margin:10rem;
+  border: .5rem solid transparent;
+  background: linear-gradient( var(--seagreen) , var(--roughblue) ) border-box;
+  border-radius: 30.0rem;
+}
+.SkillsImage{
+    display:block;
+    float:right;
+    height: 60.0rem;
+    width:60.0rem;
+    border: .5rem solid transparent;
+    background: linear-gradient( var(--seagreen) , var(--roughblue) ) border-box;
+    border-radius: 30.0rem;
+}
+
+.Socials{
+  margin-top: -35rem;
+  margin-left: 5rem;
+  flex-direction: column;
+}
+
+/*  */
+/* This is the styling for the Project.js */
+/* */
+
+.Projects{
+  display: inline-flex;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y:auto;
+  overflow-x: hidden;
+  max-width: 109rem;
+  max-height: 79rem;
+  padding:2.5rem;
+  border: 1px solid none;
+}
+
+.Project{
+  height: 22.0rem;
+  width: 39.0rem;;
+  border-radius: 2.5rem;
+  margin:2.5rem 2.5rem 0rem 2.5rem;
+  transition:.25s ease-in-out;
+}
+
+.ProjectTitle{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display:inline;
+  font-size:2.6rem;
+  font-weight: bold;
+  font-family:'Segoe UI';
+  color:#fff;
+  transition:.25s ease-in-out;
+}
+
+.tohitthettile:Hover>.ProjectTitle{
+  color:#05404b;
+  }
+.ProjectBox{
+  display:inline-block;
+  border-radius: 2.5rem;
+  margin:4.5rem 0rem 4.5rem 0rem ;
+  height: 28.0rem;
+  width: 44.0rem;
+  transition:.55s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+}
+.ProjectBox:Hover{
+  transform: scale(1.05);
+  background-color: #fff ;
+}
+/* 
+This is the styling for contactjs
+*/
+
+.Contact {
+  display:flex;
+  flex-direction: row;
+  background-image:linear-gradient( var(--deepblue),var(--deep-seagreen));
+  align-items: center;
+  justify-content: center;
+  min-height:100vh ;
+}
+.ContactInfo{
+
+    display:flex;
+    flex-direction: column;
+    font-size:2.4rem;
+    font-weight: bold;
+    margin:3.0rem;
+    padding-bottom: 15rem;
+    color: var(--skyeblue);
+    border:1px solid raed;
+  
+}
+}
+@media only screen and (max-width: 450px) {
+  html{
+    font-size: 6px;
+}
+/* 
+This is the styling for the form
+*/
+.form{
+  margin:10.0rem ;
+  min-width: 10rem;
+  min-height: 7.5rem;
+}
+/*  */
+/* This is the styling for the header.js */
+/*  */
+
+.header{
+  min-width: 60rem;
+  background-color: var(--matter-black);
+  text-align:right;
+  z-index: 9;
+}
+.menu{
+  display:none;
+}
+.menu-mob{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-color: var(--matter-black);
+  min-height:150vh;
+  width:100vw;
+  z-index: 8;
+  animation: Menu-slide-down normal .5s forwards ;
+}
+@keyframes Menu-slide-down {
+  from {
+    translate: 50rem 50rem ;
+    opacity: 0;
+  }
+  to {
+    translate: 0rem 50rem;
+    opacity: 1;
+  }
+}
+.link{
+  display:block;
+  color:white;
+  text-decoration: none;
+  font-size: 7rem;
+  margin:7rem;
+}
+.bars{
+  display: block;
+  color:white;
+  font-size: 6rem;
+  margin:1rem;
+  z-index: 9;
+}
+
+/*  */
+/* This is the CSS for the PILL  */
+/*  */
+
+.pill{
+  position: absolute;
+  left:1.0rem;
+  padding:1rem;
+  margin:.5rem;
+  display: inline-block;
+  background-image:linear-gradient(-90deg,var(--seagreen),10% ,var(--deep-seagreen));
+  border-radius: 2.5rem;
+}  
+
+.App-logo {
+  height: 3.5rem;
+  width:3.5rem;
+  float:left;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Site-name{
+  color:#fff;
+  display: inline-block;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  content:center;
+  font-size:2.4rem;
+  font-weight: bold;
+  margin:.5rem 1.2rem .5rem 0;
+}
+.dot{
+  display: inline-block;
+  margin:0;
+  color: var(--orange);
+}
+
+/*  */
+/* This is the CSS for the Home page */
+/*  */
+
+.home{
+  display: flex;
+  flex-direction: column;
+  padding:5rem;
+  background-image:linear-gradient( var(--deepblue),var(--deep-seagreen));
+  min-height: 100vh;
+}
+.Socials{
+  margin-top: 5rem;
+  margin-left: 0rem;
+  flex-direction: row;
+  border:1px solid nonered;
+}
+
+/*  */
+/* This is the styling for the Project.js */
+/* */
+
+.Projects{
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y:hidden;
+  overflow-x: auto;
+  max-height:80rem;
+  padding:2.5rem;
+}
+
+.Project{
+  height: 22.0rem;
+  width: 39.0rem;;
+  border-radius: 2.5rem;
+  margin:2.5rem 2.5rem 0rem 2.5rem;
+  transition:.25s ease-in-out;
+}
+
+.ProjectTitle{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display:inline;
+  font-size:2.6rem;
+  font-weight: bold;
+  font-family:'Segoe UI';
+  color:#fff;
+  transition:.25s ease-in-out;
+}
+
+.tohitthettile:Hover>.ProjectTitle{
+  color:#05404b;
+  }
+.ProjectBox{
+  display:inline-block;
+  border-radius: 2.5rem;
+  margin:4.5rem 4.6rem 4.5rem 0rem ;
+  height: 28.0rem;
+  width: 44.0rem;
+  transition:.55s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+}
+.ProjectBox:Hover{
+  transform: scale(1.05);
+  background-color: #fff ;
+}
+
+/* 
+This is the styling for contactjs
+*/
+.Contact {
+  display:flex;
+  flex-direction: column;
+  background-image:linear-gradient( var(--deepblue),var(--deep-seagreen));
+  align-items: center;
+  min-height:100vh ;
+}
+.ContactInfo{
+  display:flex;
+  flex-direction: column;
+  font-size:2.4rem;
+  font-weight: bold;
+  margin:3.0rem;
+  color: var(--skyeblue);
+  border:1px solid nonered;
+}
+/*  */
+/* This is the CSS for all the stuff that shouldnt be in mobile */
+/*  */
+.Potrait{
+  display:none;
+}
+.SkillsImage{
+    display:none
+}
+}
+
+/*  */
+/* This is the CSS for the Home page */
+/*  */
+
+.name{
+  display:inline-block;
+  font-family:'Segoe UI';
+  font-size: 4.5rem;
+  color:white;
+  font-weight: 650;
+  text-align: center;
+  border: 1px solid none;
+}
+.logoinname{
+  position: relative;
+  top:1.7rem;
+  float:inline-start;
+  margin-top:-1.2rem;
+  height: 6.5rem;
+  width:6.5rem;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+/*  */
+/* This is the styling for Socails.js */
+/*  */
+
+
+.Socials{
+  display: flex;
+  height: 9rem;
+  text-align: center;
+  border: 1px solid none;
+}
+
+.icon{
+  display: inline;
+  font-Size:3.5rem;
+  margin:2.5rem;
+  color:var(--skyeblue);
+  transition:.55s ease-in-out ;
+}
+
+.icon:hover{
+  font-Size:3.5rem;
+  border:.1rem solid var(--orange);
+  padding:1.0rem;
+  border-radius: 1.0rem;
+  color: var(--deep-seagreen);
+  background-color: var(--orange);
+}
+
+.icon:active{
+  font-Size:3.5rem;
+  border:.1rem solid var(--orange);
+  padding:1.0rem;
+  border-radius: 1.0rem;
+  color:var(--skyeblue);
+  background-color: var(--skyeblue);
+  transition:.0s ease-in-out ;
+}
+
+.CopiedBox{
+  font-Size:1.5rem;
+  display:inline-block;
+}
+
+.CopiedPopup{
+  display:inline-block;
+  position:absolute;
+  margin: -1.5rem 2.0rem .0rem -8.7rem;
+  padding:.4rem 1.0rem;
+  height:2.0rem;
+  width:5.0rem;
+  border-radius: .8rem;
+  background-color: var(--deepblue);
+  color: var(--orange);
+  animation: Copied-pop-up normal .5s forwards ;
+}
+
+.CopiedPopup::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 1.3rem solid transparent;
+  border-top-color: var(--deepblue);
+  border-bottom: 0;
+  margin-left: -1.3rem;
+  margin-bottom: -1.3rem;
+}
+@keyframes Copied-pop-up {
+  from {
+    translate: 0px +3rem ;
+    opacity: 0;
+  }
+  to {
+    translate: 0px 0vh;
+    opacity: 1;
+  }
+  
+}
+
+/*  */
+/*This is the Styling for Contact*/
+/*  */
+
+.getInTouch{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin:3rem;
+  color:  var(--skyeblue);
+  cursor: text;
+  font-size: 2.5rem;
+  line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+form {
+  text-align: center;
+  border: .3rem solid  var(--skyeblue);
+  padding: 3.0rem;
+  margin:5.0rem ;
+}
+
+.form-group {
+  display: block;
+  letter-spacing: .4rem;
+  padding-top: 3.5rem;
+  text-align: center;
+}
+
+.form-group .label-text {
+  color:  var(--skyeblue);
+  cursor: text;
+  font-size: 1.5rem;
+  line-height: 3.0rem;
+  text-transform: uppercase;
+  -moz-transform: translateY(-3.4rem);
+  -ms-transform: translateY(-3.4rem);
+  -webkit-transform: translateY(-3.4rem);
+  transform: translateY(-3.4rem);
+  transition: all 0.3s;
+}
+
+/* remove the input box styling */
+.form-group input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: .2rem solid  var(--skyeblue);
+  color: #fff;
+  font-size: 2.0rem;
+  letter-spacing: .1rem;
+  outline: 0;
+  padding: .5rem 2.0rem;
+  text-align: center;
+  transition: all 0.3s;
+  width: 20.0rem;
+}
+
+/* once you click in the input the input width box animates */
+
+.form-group input:hover {
+  max-width: 100%;
+  width: 40.0rem;
+}
+/* once you click in the input the input width box animates */
+
+.form-group input:focus {
+  color:white;
+  border-bottom: .2rem solid #fff;
+  max-width: 100%;
+  width: 40.0rem;
+}
+
+/* the text floats up and turns white */
+
+.form-group input:focus + .label-text {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 1.rem;
+  -moz-transform: translateY(-7.4rem);
+  -ms-transform: translateY(-7.4rem);
+  -webkit-transform: translateY(-7.4rem);
+  transform: translateY(-7.4rem);
+}
+
+/* the text floats up during form validation */
+
+.form-group input:valid + .label-text {
+  font-size: 1.3rem;
+  -moz-transform: translateY(-7.4rem);
+  -ms-transform: translateY(-7.4rem);
+  -webkit-transform: translateY(-7.4rem);
+  transform: translateY(-7.4rem);
+}
+
+.formButton{
+  background: transparent;
+  color: var(--skyeblue);
+  border: .2rem solid  var(--skyeblue);
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  padding: 2.0rem 7.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2.0rem 0rem ;
+  -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.formButton:hover, .formButton:focus {
+  background-color:  var(--skyeblue);
+  color: white;
+  transform:scale(1.1);
+}
+/* 
+
+This is where the Skills page styling is 
+
+*/
+h1{
+  color:white;
+  font-size: 5rem;
+  margin:0;
+  padding:.5rem;
+  border:.3rem solid var(--orange);
+  background-image:linear-gradient(-90deg,var(--roughblue),var(--deepblue));
+}
+
+.SkillsPage{
+  display:flex;
+  flex-direction: column;
+  background-image:linear-gradient(var(--deep-seagreen),var(--deepblue));
+}
+
+.Skillbox{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  height:20rem;
+  width:20rem;
+  background-color: var(--matter-black);
+  margin:2rem;
+  border-radius: 20px;
+}
+
+.Skillbox>img{
+  height:17rem;
+  width:17rem;
+  border-radius: 20px;
+  padding:2rem;
+}
+
+.skillCourse{
+  font-size: 2.5rem;
+  color:white;
+}
+
+.Skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:4rem;
+  max-width: 100vw;
+  max-height: 115rem;
+  border:1px solid raed;
+}
+
+.WorkExperience,.Courses{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+color:white;
+margin:3rem;
+font-size: 2rem;
+max-width: 100vw;
+}
+.Courses>div,.WorkExperience>div{
+  display:flex;
+  flex-direction: row;
+}
+li{
+  margin:1.5rem;
 }
