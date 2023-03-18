@@ -2,7 +2,7 @@ import React from 'react'
 import Socails from './Socails';
 import reacti from './SVG/react.svg';
 import Netflix from './IMG/Netflix.jpg'
-import Todos from './IMG/Todos.jpg'
+import Bank from './IMG/Bank.jpeg'
 import Store from './IMG/Store.jpeg'
 import ComingSoon from './IMG/ComingSoon.jpeg'
 import Potrait from './IMG/Potrait.jpg'
@@ -31,16 +31,16 @@ function Home() {
         <a href="https://netflixclone1999.web.app/" className='ProjectBox' target="_blank" rel="noreferrer">
         <Project title='Netflix' photo={Netflix}></Project>
         </a>
+        
+        <a href="https://hashirhoobank.netlify.app/" className='ProjectBox' target="_blank" rel="noreferrer">
+        <Project title='Banking Site' photo={Bank}></Project>
+        </a>
 
-        <a href="https://netflixclone1999.web.app/" className='ProjectBox' target="_blank" rel="noreferrer">
+        <a href="https://hashirapparel.netlify.app/" className='ProjectBox' target="_blank" rel="noreferrer">
         <Project title='Store' photo={Store}></Project>
         </a>
-        
-        <a href="https://netflixclone1999.web.app/" className='ProjectBox' target="_blank" rel="noreferrer">
-        <Project title='Todolist' photo={Todos}></Project>
-        </a>
 
-        <a href="https://netflixclone1999.web.app/" className='ProjectBox' target="_blank" rel="noreferrer">
+        <a href="" className='ProjectBox' target="_blank" rel="noreferrer">
         <Project title='InProgress' photo={ComingSoon}></Project>
         </a>
              
